@@ -1,0 +1,23 @@
+<html>
+   <head>
+      <title>Hatchways</title>
+      <script type = "text/javascript" src = "./js/vue.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   </head>
+   <body>
+        
+      <div id = "app1" v-for="s in students" :keys="s.id">
+         <h1>{{firstname}}</h1>
+         <h1>Email : {{s.email}}</h1>
+         <h1>Company: {{s.company}}</h1>
+         <h1>Skill: {{s.Skill}}</h1>
+         <h1>Average: {{s.grades/8}}%</h1>
+         <div>{{htmlcontent}}</div>
+         <div v-html = "htmlcontent"></div>
+      </div>
+      
+      <script type = "text/javascript" src = "./js/API.js">
+      
+      </script>
+   </body>
+</html>
